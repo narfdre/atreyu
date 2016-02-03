@@ -1,0 +1,9 @@
+<h2>Events page</h2>
+<ul>
+  <li ng-repeat="(id, event) in events.events">
+    <a ui-sref="events.event({id:id})">{{event.name}}</a>
+  </li>
+</ul>
+
+
+<div ui-view></div>
